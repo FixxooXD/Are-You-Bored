@@ -6,6 +6,7 @@ console.log(type);
 console.log(nextBtn);
 
 nextBtn.addEventListener('click', nextActivity)
+document.addEventListener("DOMContentLoaded", nextActivity);
 
 async function  nextActivity(){
    const activityResponse  = await fetch('https://www.boredapi.com/api/activity/')
